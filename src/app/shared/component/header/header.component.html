@@ -21,16 +21,16 @@
 
     <nav class="nav align-items-center   ">
         <div class="logo">
-            <a  class="navbar--logo fw-bolder fs-5 mainColor" href="#"><img src="../../../../assets/imges/logo.png"
+            <a  [routerLink]="['/AllProducts']" class="navbar--logo fw-bolder fs-5 mainColor" ><img src="assets/imges/logo.png"
                     alt=""></a>
         </div>
         <div id="LinksList" class="Links--list  me-auto  " [class.open]="varibleNavbar">
-            <a  class="link" href="index.html"><span>Home</span></a>
-            <a class="link" href="about.html"> <span>Shop</span></a>
-            <a class="link" href="services.html"> <span>Pages</span></a>
-            <a class="link" href="Blog.html"><span>About </span></a>
-            <a class="link" href="Blog.html"><span>Blog </span></a>
-            <a class="link" href="Blog.html"><span>Contact </span></a>
+            <a  class="link"  [routerLink]="['/AllProducts']" routerLinkActive="router-link-active" ><span>Home</span></a>
+            <a class="link" > <span>Shop</span></a>
+            <a class="link" > <span>Pages</span></a>
+            <a class="link" ><span>About </span></a>
+            <a class="link" ><span>Blog </span></a>
+            <a class="link" ><span>Contact </span></a>
 
             <input class="input-elevated" type="text" placeholder="What are you looking for ?">
         </div>
